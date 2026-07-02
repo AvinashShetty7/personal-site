@@ -11,7 +11,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 }) => {
   return (
     <div className={styles.section}>
-      <h2>experience</h2>
+      <h2>Experience</h2>
       {experience.map((exp, index) => (
         <div key={index} className={styles.experienceItem}>
           <h3>{exp.position}</h3>

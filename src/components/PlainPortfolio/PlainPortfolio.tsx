@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  personalInfo,
-  projects,
-  experience,
-} from "../../data";
+import { personalInfo, projects, experience, tech } from "../../data";
 import styles from "./PlainPortfolio.module.css";
 
 import {
@@ -11,8 +7,9 @@ import {
   ProjectGrid,
   ExperienceSection,
   ContactSection,
+  
 } from "./components";
-
+import TechSection from "./components/Skills"
 const PlainPortfolio: React.FC = () => {
   React.useEffect(() => {
     document.body.style.display = "block";
@@ -44,7 +41,7 @@ const PlainPortfolio: React.FC = () => {
 
       <ProjectGrid projects={projects} maxProjects={6} />
 
-
+      <TechSection tech={tech}/>
       <ContactSection personalInfo={personalInfo} />
     </div>
   );

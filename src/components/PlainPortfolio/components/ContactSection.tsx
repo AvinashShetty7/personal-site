@@ -10,12 +10,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ personalInfo }) => {
   return (
     <>
       <div className={styles.section}>
-        <h2>technologies</h2>
+        <h2>Technologies</h2>
         <p>{personalInfo.technologies}</p>
       </div>
 
       <div className={styles.section}>
-        <h2>contact</h2>
+        <h2>Contact</h2>
         <p>
           Feel free to reach out at{" "}
           <a href={personalInfo.socialLinks.email}>

@@ -37,6 +37,10 @@ export interface Experience {
   workDone: string[];
 }
 
+export interface Tech {
+  technologyName: string;
+  techImage: string;
+}
 
 const personalInfo: PersonalInfo = {
   name: "Avinasha Shetty",
@@ -118,7 +122,7 @@ const projects: Project[] = [
   },
   {
     title: "TruLeaf – Digital Food Traceability Platform",
-    img: "dhanush.png",
+    img: "truleaf.png",
     description: [
       "Engineered a production-grade supply chain visibility application using the MERN stack to track historical food logistics transparently from origin to marketplace.",
       "Implemented data confidentiality layers with Role-Based Access Control (RBAC) and cryptographically signed JSON Web Tokens (JWT) for secured multi-tenant authentication workflows.",
@@ -151,141 +155,107 @@ const experience: Experience[] = [
   },
 ];
 
-// const achievementNotes: AchievementNote[] = [
-//   {
-//     id: "achievement-1",
-//     title: "ETHIndia 2023 Winner",
-//     preview: "Winner of ETHIndia 2023 + 3 track prizes",
-//     image: "ethindia-2023.jpeg",
-//     achievementTitle: "ETHIndia 2023 - 3Transform",
-//     content: [
-//       "Empowers beginners with hands-on smart contract integration.",
-//       "Helps enterprises adopt Web3 efficiently.",
-//       "🏆 Winner of ETHIndia 2023, the world's biggest Ethereum hackathon.",
-//       "🏅 Won 3 track prizes - Filecoin, Okto, and Scroll.",
-//     ],
-//     date: "December 2023",
-//     link: "https://devfolio.co/projects/transform-014b",
-//   },
-//   {
-//     id: "achievement-2",
-//     title: "Kavach 2023 Winner",
-//     preview: "Government integration of crime detection tool",
-//     image: "kavach-2023.jpeg",
-//     achievementTitle: "Kavach 2023 - FundTrail",
-//     content: [
-//       "Developed a fund trail analysis tool to detect cybercrime.",
-//       "Winner of Kavach 2023, a national-level government hackathon.",
-//       "Project selected for integration into current government systems.",
-//     ],
-//     date: "August 2023",
-//     link: "https://www.youtube.com/watch?v=PQmar1DG5eI",
-//   },
-//   {
-//     id: "achievement-3",
-//     title: "ETHIndia 2024 Honoree",
-//     preview: "Quadratic prize winner + Honorable mention",
-//     image: "ethindia-2024.jpeg",
-//     achievementTitle: "ETHIndia 2024 - ThreeDrive",
-//     content: [
-//       "A decentralized Google Drive-like filesystem powered by the Walrus protocol.",
-//       "Provides intuitive nested folders, real-time collaboration, and SDK integration.",
-//       "🏅 Honorable Mention in Walrus Protocol track.",
-//       "🏆 Won share of Quadratic Voting prize pool.",
-//     ],
-//     date: "December 2024",
-//     link: "https://devfolio.co/projects/threedrive-0f13",
-//   },
-//   {
-//     id: "achievement-4",
-//     title: "Unfold 2024 - Best Agentic Project",
-//     preview: "Crypto-reward GitHub bot wins 3 prizes",
-//     image: "unfold-2024.jpeg",
-//     achievementTitle: "Unfold 2024 - OpenFund",
-//     content: [
-//       "Empowering open source innovation with crypto rewards.",
-//       "AI-driven GitHub bot bridges contributions and incentives.",
-//       "🏅 Won 'Best Agentic Project' from Nethermind and 2 other prizes.",
-//       "Tackles contributor burnout with automated crypto rewards.",
-//     ],
-//     date: "December 2024",
-//     link: "https://devfolio.co/projects/openfund-8ef2",
-//   },
-//   {
-//     id: "achievement-5",
-//     title: "Prakalp 2025 Winner",
-//     preview: "Best software project for Parity Protocol",
-//     image: "prakalp-2025.jpeg",
-//     achievementTitle: "Prakalp 2025 - Parity Protocol",
-//     content: [
-//       "National-level project presentation competition.",
-//       "Won best software project for presenting Parity Protocol - an open-source decentralized compute platform.",
-//     ],
-//     date: "April 2025",
-//   },
-//   {
-//     id: "achievement-6",
-//     title: "JPMC Secure Code Warrior - 2nd Place",
-//     preview: "Ranked 2nd among interns across India & Singapore",
-//     image: "jpmc-2024.png",
-//     achievementTitle: "Secure Code Warrior 2024",
-//     content: [
-//       "Internal CTF-style cybersecurity contest by JPMC.",
-//       "Involved solving real-world hacking challenges and quizzes.",
-//       "🏅 Secured 2nd place across all interns in India + Singapore.",
-//     ],
-//     date: "July 2024",
-//   },
-//   {
-//     id: "achievement-7",
-//     title: "Hackerstellar Blockchain 2023 Winner",
-//     preview: "Escrow + logistics dApp with KYC verification",
-//     image: "hackerstellar-2023.jpeg",
-//     achievementTitle: "Hackerstellar - ThreeChain",
-//     content: [
-//       "Secured goods transfer with ERC721 tokens and escrow service.",
-//       "Integrated logistics transparency and Aadhaar QR-based KYC.",
-//     ],
-//     date: "April 2023",
-//     link: "https://devfolio.co/projects/three-chain-97b3",
-//   },
-//   {
-//     id: "achievement-8",
-//     title: "BitnBuild 2023 Winner",
-//     preview: "Tokenized real estate using Polygon",
-//     image: "bitnbuild-2023.jpeg",
-//     achievementTitle: "BitnBuild - Bricks",
-//     content: [
-//       "Streamlined property transactions using NFTs on Polygon.",
-//       "Improved transparency and security with blockchain tech.",
-//     ],
-//     date: "January 2023",
-//     link: "https://devfolio.co/projects/bricks-731e",
-//   },
-//   {
-//     id: "achievement-9",
-//     title: "X-Tract Datathon - 3rd Place",
-//     preview: "Ranked 3rd in ML + data cleaning competition",
-//     image: "xtract-2022.jpeg",
-//     achievementTitle: "X-Tract 2022 Datathon",
-//     content: [
-//       "Solved end-to-end challenges using data cleaning & ML models.",
-//       "Ranked 3rd overall by solving full trail with accurate predictions.",
-//     ],
-//     date: "March 2022",
-//   },
-//   {
-//     id: "achievement-10",
-//     title: "Bid by Bit 2022 Champion",
-//     preview: "DSA-based gamified contest win",
-//     image: "",
-//     achievementTitle: "Bid by Bit 2022",
-//     content: [
-//       "State-level competitive programming contest.",
-//       "Used DSA to earn points and unlock new problem sets.",
-//     ],
-//     date: "November 2022",
-//   },
-// ];
+const tech: Tech[] = [
+  {
+    technologyName: "Ansible",
+    techImage: "/images/Ansible.png",
+  },
+  {
+    technologyName: "Argo CD",
+    techImage: "/images/Argo CD.png",
+  },
+  {
+    technologyName: "Bash",
+    techImage: "/images/Bash.png",
+  },
+  {
+    technologyName: "Docker",
+    techImage: "/images/Docker.png",
+  },
+  {
+    technologyName: "Grafana",
+    techImage: "/images/Grafana.png",
+  },
+  {
+    technologyName: "GitHub Actions",
+    techImage: "/images/GitHub Actions.png",
+  },
+  {
+    technologyName: "Terraform",
+    techImage: "/images/HashiCorp Terraform.png",
+  },
+  {
+    technologyName: "helm",
+    techImage: "/images/helm.png",
+  },
+  {
+    technologyName: "java",
+    techImage: "/images/Java.png",
+  },
+  {
+    technologyName: "Jenkins",
+    techImage: "/images/Jenkins.png",
+  },
+  {
+    technologyName: "Kubernetes",
+    techImage: "/images/k8s.png",
+  },
+  {
+    technologyName: "Linux",
+    techImage: "/images/linux.png",
+  },
+  {
+    technologyName: "NGINX",
+    techImage: "/images/NGINX.png",
+  },
+  {
+    technologyName: "PHP",
+    techImage: "/images/PHP.png",
+  },
+  {
+    technologyName: "prometheus",
+    techImage: "/images/prom.png",
+  },
+  {
+    technologyName: "python",
+    techImage: "/images/Python.png",
+  },
+   {
+    technologyName: "Aws",
+    techImage: "/images/aws.png",
+  }, {
+    technologyName: "CSS",
+    techImage: "/images/css.png",
+  }, {
+    technologyName: "ExpressJS",
+    techImage: "/images/express.png",
+  }, {
+    technologyName: "Git",
+    techImage: "/images/git.png",
+  }, {
+    technologyName: "GitHub",
+    techImage: "/images/github.png",
+  }, {
+    technologyName: "HTML",
+    techImage: "/images/html.png",
+  }, {
+    technologyName: "JavaScript",
+    techImage: "/images/javascript.png",
+  },
+   {
+    technologyName: "MongoDB",
+    techImage: "/images/mongodb.png",
+  }, {
+    technologyName: "MySQL",
+    techImage: "/images/mysql.png",
+  }, {
+    technologyName: "NodeJS",
+    techImage: "/images/nodejs.png",
+  },
+   {
+    technologyName: "Tailwind",
+    techImage: "/images/tailwind.png",
+  },
+];
 
-export { personalInfo, projects, experience };
+export { personalInfo, projects, experience, tech };

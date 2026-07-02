@@ -15,7 +15,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
 
   return (
     <div className={styles.section}>
-      <h2 id="projects">featured projects</h2>
+      <h2 id="projects">Featured projects</h2>
       <div className={styles.projectGrid}>
         {displayProjects.map((project, index) => (
           <div key={index} className={styles.projectItem}>

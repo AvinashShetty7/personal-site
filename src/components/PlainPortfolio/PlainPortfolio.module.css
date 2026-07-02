@@ -401,3 +401,21 @@
     margin-bottom: 6px;
   }
 }
+
+/*  */
+.techContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Moves to next line if needed */
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techImage {
+  width: 60px;
+  height: 60px;
+}

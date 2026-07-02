@@ -73,7 +73,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
             config={config}
             onSelect={selectActiveItem}
             isActive={activeElement === config.id}
-            ref={el => (itemRefs.current[index] = el)}
+            ref={el => {(itemRefs.current[index] = el)}}
           />
         ))}
       </div>

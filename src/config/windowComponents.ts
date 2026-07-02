@@ -3,11 +3,14 @@ import AboutUs from "../components/AboutUs";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Notes from "../components/Notes";
+import Skill from "../components/Skills"
+
 
 import linux from "../assets/linux.png";
 import visualStudio from "../assets/visualStudio.png";
 import terminal from "../assets/terminal.png";
 import notes from "../assets/notes.png";
+import Skills from "../assets/Ubuntu.png"
 
 export interface WindowComponentProps {
   onClickClose: () => void;
@@ -95,6 +98,16 @@ export const windowComponentsConfig: WindowConfig[] = [
     defaultZIndex: 1,
     preload: false,
     description: "Browse my knowledge base and notes",
+  },
+  {
+    id: "Skills",
+    name: "Skills",
+    displayName: "Skills",
+    component: Skill,
+    icon: Skills,
+    defaultZIndex: 1,
+    preload: false,
+    description: "Check out my skills",
   },
 ];
 
