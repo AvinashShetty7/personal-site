@@ -3,7 +3,6 @@ import styles from "./AboutUs.module.css";
 import { tech } from "../../data";
 import WindowBox from "../WindowBox/WindowBox";
 import { IconContext } from "react-icons";
-import { TbBackground } from "react-icons/tb";
 
 interface AboutUsProps {
   onClickClose: () => void;

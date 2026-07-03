@@ -40,17 +40,17 @@ interface GitHubOrg {
   description?: string;
 }
 
-interface GitHubEvent {
-  type: string;
-  repo: {
-    name: string;
-    url: string;
-  };
-  org?: {
-    login: string;
-    avatar_url: string;
-  };
-}
+// interface GitHubEvent {
+//   type: string;
+//   repo: {
+//     name: string;
+//     url: string;
+//   };
+//   org?: {
+//     login: string;
+//     avatar_url: string;
+//   };
+// }
 
 interface ContributedRepo {
   name: string;
@@ -117,12 +117,12 @@ const GitHubStats: React.FC = () => {
     );
     const orgs: GitHubOrg[] = orgsResponse.ok ? await orgsResponse.json() : [];
 
-    const eventsResponse = await fetch(
-      `${baseUrl}/users/${GITHUB_USERNAME}/events/public?per_page=100`
-    );
-    const _events: GitHubEvent[] = eventsResponse.ok
-      ? await eventsResponse.json()
-      : [];
+    // const eventsResponse = await fetch(
+    //   `${baseUrl}/users/${GITHUB_USERNAME}/events/public?per_page=100`
+    // );
+    // const _events: GitHubEvent[] = eventsResponse.ok
+    //   ? await eventsResponse.json()
+    //   : [];
 
     const totalStars = repos.reduce(
       (sum, repo) => sum + repo.stargazers_count,

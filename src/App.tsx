@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import Container from "./components/Container";
 import styles from "./App.module.css";
 import Cam from "./assets/Cam.png";

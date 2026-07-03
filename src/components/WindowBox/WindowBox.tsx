@@ -1,5 +1,5 @@
 import Draggable from "react-draggable";
-import type { DraggableData, DraggableEvent } from "react-draggable";
+import type { DraggableData } from "react-draggable";
 import styles from "./WindowBox.module.css";
 import React, { useEffect, useState } from "react";
 import Close from "../../assets/Close.png";
@@ -75,7 +75,7 @@ const WindowBox: React.FC<WindowBoxProps> = ({
     }
   };
 
-  const positionHandler = (e: DraggableEvent, data: DraggableData) => {
+  const positionHandler = (data: DraggableData) => {
     setPosition({ x: data.x, y: data.y });
   };
 
@@ -83,7 +83,7 @@ const WindowBox: React.FC<WindowBoxProps> = ({
     <Draggable
       bounds="parent"
       onMouseDown={() => setActive()}
-      onDrag={(e, data) => positionHandler(e, data)}
+      onDrag={(_, data) => positionHandler(data)}
       position={{
         x: parseFloat(position.x.toString()),
         y: parseFloat(position.y.toString()),

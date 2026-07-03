@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 import WindowBox from "../WindowBox/WindowBox";
 import { projects } from "../../data";
 import ProjectItem from "./ProjectItem";
-import { createSlug, parseSlugPath } from "../../utils/slugUtils";
+import { createSlug } from "../../utils/slugUtils";
 import {
   VscFolder,
   VscFolderOpened,
@@ -441,7 +441,7 @@ const Projects: React.FC<ProjectsProps> = ({
                               aria-expanded={selectedProject === actualIndex}
                             >
                               <div
-                                ref={el => (projectRefs.current[index] = el)}
+                                ref={el => {(projectRefs.current[index] = el)}}
                                 className={`${styles.folderItem} ${
                                   selectedProject === actualIndex
                                     ? styles.expanded

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./Notes.module.css";
 import WindowBox from "../WindowBox/WindowBox";
 import { notesData } from "../../notesData";
-import { createSlug, parseSlugPath } from "../../utils/slugUtils";
+import { createSlug } from "../../utils/slugUtils";
 
 interface NotesProps {
   onClickClose: () => void;
