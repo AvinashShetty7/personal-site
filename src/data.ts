@@ -12,7 +12,7 @@ export interface PersonalInfo {
     resume: string;
   };
   about: string[];
-  technologies: string;
+  // technologies: string;
 }
 
 export interface ResumeItem {
@@ -61,8 +61,8 @@ const personalInfo: PersonalInfo = {
     "Skilled in engineering automated CI/CD and GitOps pipelines utilizing GitHub Actions and Argo CD, alongside full-stack MERN development capabilities.",
     "My experience spans across various technologies and I'm always eager to learn new technologies and tackle challenging problems.",
   ],
-  technologies:
-    "I work with a wide range of technologies including React, Node.js, Python, AWS, Docker,kubernetes, Terraform , and many more. I'm particularly interested in building and deploying scalable web applications.",
+  // technologies:
+  //   "I work with a wide range of technologies including React, Node.js, Python, AWS, Docker,kubernetes, Terraform , and many more. I'm particularly interested in building and deploying scalable web applications.",
 };
 
 const projects: Project[] = [
@@ -157,102 +157,119 @@ const experience: Experience[] = [
 
 const tech: Tech[] = [
   {
-    technologyName: "Ansible",
-    techImage: "/images/Ansible.png",
+    technologyName: "Linux",
+    techImage: "/images/linux.png",
   },
   {
-    technologyName: "Argo CD",
-    techImage: "/images/Argo CD.png",
-  },
-  {
-    technologyName: "Bash",
-    techImage: "/images/Bash.png",
+    technologyName: "Aws",
+    techImage: "/images/aws.png",
   },
   {
     technologyName: "Docker",
     techImage: "/images/Docker.png",
   },
   {
-    technologyName: "Grafana",
-    techImage: "/images/Grafana.png",
-  },
-  {
-    technologyName: "GitHub Actions",
-    techImage: "/images/GitHub Actions.png",
+    technologyName: "Kubernetes",
+    techImage: "/images/k8s.png",
   },
   {
     technologyName: "Terraform",
     techImage: "/images/HashiCorp Terraform.png",
   },
   {
-    technologyName: "helm",
-    techImage: "/images/helm.png",
+    technologyName: "Argo CD",
+    techImage: "/images/Argo CD.png",
   },
   {
-    technologyName: "java",
-    techImage: "/images/Java.png",
+    technologyName: "Ansible",
+    techImage: "/images/Ansible.png",
+  },
+
+  {
+    technologyName: "Bash",
+    techImage: "/images/Bash.png",
+  },
+  {
+    technologyName: "GitHub Actions",
+    techImage: "/images/GitHub Actions.png",
   },
   {
     technologyName: "Jenkins",
     techImage: "/images/Jenkins.png",
   },
   {
-    technologyName: "Kubernetes",
-    techImage: "/images/k8s.png",
+    technologyName: "prometheus",
+    techImage: "/images/prom.png",
   },
   {
-    technologyName: "Linux",
-    techImage: "/images/linux.png",
+    technologyName: "Grafana",
+    techImage: "/images/Grafana.png",
   },
   {
     technologyName: "NGINX",
     techImage: "/images/NGINX.png",
   },
   {
+    technologyName: "helm",
+    techImage: "/images/helm.png",
+  },
+    {
+    technologyName: "Git",
+    techImage: "/images/git.png",
+  },
+  {
+    technologyName: "GitHub",
+    techImage: "/images/github.png",
+  },
+  {
+    technologyName: "java",
+    techImage: "/images/Java.png",
+  },
+
+
+  {
     technologyName: "PHP",
     techImage: "/images/PHP.png",
   },
-  {
-    technologyName: "prometheus",
-    techImage: "/images/prom.png",
-  },
+
   {
     technologyName: "python",
     techImage: "/images/Python.png",
   },
-   {
-    technologyName: "Aws",
-    techImage: "/images/aws.png",
-  }, {
-    technologyName: "CSS",
-    techImage: "/images/css.png",
-  }, {
-    technologyName: "ExpressJS",
-    techImage: "/images/express.png",
-  }, {
-    technologyName: "Git",
-    techImage: "/images/git.png",
-  }, {
-    technologyName: "GitHub",
-    techImage: "/images/github.png",
-  }, {
+  {
     technologyName: "HTML",
     techImage: "/images/html.png",
-  }, {
+  },
+  {
+    technologyName: "CSS",
+    techImage: "/images/css.png",
+  },
+    {
     technologyName: "JavaScript",
     techImage: "/images/javascript.png",
   },
-   {
-    technologyName: "MongoDB",
-    techImage: "/images/mongodb.png",
-  }, {
-    technologyName: "MySQL",
-    techImage: "/images/mysql.png",
-  }, {
+      {
+    technologyName: "React",
+    techImage: "/images/reactjs.png",
+  },
+  {
+    technologyName: "ExpressJS",
+    techImage: "/images/express.png",
+  },
+  {
     technologyName: "NodeJS",
     techImage: "/images/nodejs.png",
   },
-   {
+  {
+    technologyName: "MongoDB",
+    techImage: "/images/mongodb.png",
+  },
+  {
+    technologyName: "MySQL",
+    techImage: "/images/mysql.png",
+  },
+
+  {
     technologyName: "Tailwind",
     techImage: "/images/tailwind.png",
   },

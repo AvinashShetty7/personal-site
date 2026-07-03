@@ -42,6 +42,7 @@ const PlainPortfolio: React.FC = () => {
       <ProjectGrid projects={projects} maxProjects={6} />
 
       <TechSection tech={tech}/>
+      
       <ContactSection personalInfo={personalInfo} />
     </div>
   );

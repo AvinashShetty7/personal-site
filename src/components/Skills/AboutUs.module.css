@@ -112,6 +112,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 480px) {
   .header {
     padding: 1rem 0.8rem 0.8rem 0.8rem;
@@ -135,12 +137,44 @@
 }
 
 .containerTitle,
-.container,
+/* .container, */
 .greyLine,
 .TabContainer {
-  display: none;
+  display:none;
 }
 
+.skilllist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profileImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100px;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.profileImageWrapper p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.para{
+  color: rgb(186, 183, 183);
+}
 .osContainer {
   display: flex;
   flex-direction: column;
